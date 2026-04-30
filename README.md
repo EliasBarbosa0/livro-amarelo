@@ -1,5 +1,7 @@
 <div align="center">
 
+**🌐 Language / Idioma:** [English](README.en.md) . [Português](README.md)
+
 # o Livro Amarelo — Q&A
 
 **Explore o Livro Amarelo por meio de perguntas em linguagem natural.**
