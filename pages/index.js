@@ -22,34 +22,30 @@ export default function Entry() {
   return (
     <>
       <Head>
-        <title>o Livro Amarelo</title>
+        <title>o Livro Amarelo — O Futuro é Glorioso</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Explore as propostas do Livro Amarelo — um projeto de país para transformar o Brasil na quinta maior economia do mundo. Faça perguntas em linguagem natural e receba respostas baseadas no documento." />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:url" content="https://livroamarelo.com" />
+        <meta property="og:title" content="o Livro Amarelo — O Futuro é Glorioso" />
+        <meta property="og:description" content="Explore as propostas do Livro Amarelo — um projeto de país para transformar o Brasil na quinta maior economia do mundo." />
+        <meta property="og:image" content="https://livroamarelo.com/cover.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="o Livro Amarelo — O Futuro é Glorioso" />
+        <meta name="twitter:description" content="Explore as propostas do Livro Amarelo — um projeto de país para transformar o Brasil na quinta maior economia do mundo." />
+        <meta name="twitter:image" content="https://livroamarelo.com/cover.png" />
       </Head>
 
       <div className="split-page" style={s.page}>
 
-        {/* Left panel — brand identity */}
+        {/* Left panel — cover image */}
         <div className="split-left" style={s.left}>
-          <div style={s.leftInner}>
-            <div style={s.brandText}>
-              <span style={s.brandSmall}>o</span>
-              <span style={s.brandBig}>Livro</span>
-              <span style={s.brandBig}>Amarelo</span>
-            </div>
-
-            {/* Cover illustration */}
-            <div style={s.illustrationWrap}>
-              <img
-                src="/cover.png"
-                alt="Ilustração o Livro Amarelo"
-                style={s.illustration}
-              />
-            </div>
-
-            <p style={s.leftFooter}>
-              Brasil · 2026
-            </p>
-          </div>
+          <img
+            src="/cover.png"
+            alt="o Livro Amarelo"
+            style={s.illustration}
+          />
         </div>
 
         {/* Right panel — verification */}
@@ -90,51 +86,14 @@ const s = {
 
   /* ── Left yellow panel ── */
   left: {
-    background: '#FCBF22',
-  },
-  leftInner: {
-    maxWidth: '480px',
-    width: '100%',
-  },
-  brandText: {
-    display: 'flex',
-    flexDirection: 'column',
-    lineHeight: 0.9,
-    marginBottom: '32px',
-  },
-  brandSmall: {
-    fontSize: 'clamp(1.25rem, 3vw, 2rem)',
-    fontWeight: 900,
-    color: '#000000',
-    letterSpacing: '-0.02em',
-  },
-  brandBig: {
-    fontSize: 'clamp(3rem, 8vw, 6rem)',
-    fontWeight: 900,
-    color: '#000000',
-    letterSpacing: '-0.04em',
-    textTransform: 'uppercase',
-  },
-  illustrationWrap: {
-    width: '100%',
-    marginBottom: '40px',
+    background: '#ECCB00',
   },
   illustration: {
     width: '100%',
-    maxWidth: '460px',
+    height: '100%',
+    objectFit: 'cover',
     display: 'block',
-    mixBlendMode: 'multiply',
   },
-  leftFooter: {
-    fontSize: '0.8rem',
-    color: '#000000',
-    opacity: 0.55,
-    lineHeight: 1.6,
-    fontWeight: 500,
-    letterSpacing: '0.03em',
-    textTransform: 'uppercase',
-  },
-
   /* ── Right white panel ── */
   right: {
     background: '#FFFFFF',
